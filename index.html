@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Unban Tool by Kevo Loves</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="glitter-bg">
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+        <div class="glitter"></div>
+    </div>
+
+    <!-- Pulsing background lights -->
+    <div class="pulse-light pulse-1"></div>
+    <div class="pulse-light pulse-2"></div>
+    <div class="pulse-light pulse-3"></div>
+
+    <!-- Main container -->
+    <div class="container">
+        <header>
+            <h1><i class="fab fa-whatsapp"></i> WhatsApp Unban Tool</h1>
+            <p class="subtitle">by <span class="kevo">Kevo Loves</span></p>
+        </header>
+
+        <main>
+            <div class="tool-card">
+                <div class="card-header">
+                    <h2>Unban Your WhatsApp Account</h2>
+                    <p>Fill out the form below to generate your unban request</p>
+                </div>
+
+                <form id="unbanForm">
+                    <div class="form-group">
+                        <label for="banType">Type of Ban <span class="required">*</span></label>
+                        <select id="banType" name="banType" required>
+                            <option value="" disabled selected>Select your ban type</option>
+                            <option value="temporary">Temporary Ban</option>
+                            <option value="permanent">Permanent Ban</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="reasonGroup" style="display: none;">
+                        <label for="banReason">Reason for Ban <span class="required">*</span></label>
+                        <select id="banReason" name="banReason" required>
+                            <option value="" disabled selected>Select a reason</option>
+                            <!-- Options will be populated by JavaScript based on ban type -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber">Your Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+1234567890" minlength="10" maxlength="15" required>
+                    </div>
+
+                    <button type="submit" id="generateBtn" class="btn-generate">
+                        <i class="fas fa-magic"></i> GENERATE UNBAN REQUEST
+                    </button>
+                </form>
+
+                <div id="emailSection" class="email-section" style="display: none;">
+                    <h3>Your Unban Request Email</h3>
+                    <div class="email-text" id="emailText" unselectable="on">
+                        <!-- Email content will be inserted here by JavaScript -->
+                    </div>
+                    <div class="email-actions">
+                        <button id="copyBtn" class="btn-copy">
+                            <i class="far fa-copy"></i> Copy to Clipboard
+                        </button>
+                        <button id="sendBtn" class="btn-send">
+                            <i class="far fa-paper-plane"></i> Send Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="social-links">
+                <p>Follow us for updates:</p>
+                <div class="social-buttons">
+                	<a href="https://whatsapp.com/channel/0029Vb6XQInFXUud1tMwcu0G" id="whatsappLink" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Channel1
+                    </a>
+                    
+                    <a href="https://whatsapp.com/channel/0029VbAskavKbYMOfucNZ31r" id="whatsappLink" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Channel2
+                    </a>
+                    <a href="https://t.me/whatsapp_bots_overloaded" id="telegramLink" class="social-btn telegram">
+                        <i class="fab fa-telegram"></i> Telegram Channel
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">© 2025 WhatsApp Unban Tool by Kevo Loves. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
